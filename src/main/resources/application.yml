@@ -1,0 +1,4 @@
+graphql:
+  packages: "dev.simpletimer.simpletimer_api"
+  playground:
+    enabled: true
