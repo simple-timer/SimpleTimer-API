@@ -20,7 +20,7 @@ repositories {
     mavenCentral()
 }
 
-val exposedVersion = "0.44.1"
+val exposedVersion = "0.45.0"
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-webflux")
