@@ -35,3 +35,7 @@ out/
 
 ### VS Code ###
 .vscode/
+
+# Dockerで用いているファイル
+docker-compose.yml
+.env
