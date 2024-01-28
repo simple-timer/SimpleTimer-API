@@ -5,7 +5,7 @@ plugins {
     id("io.spring.dependency-management") version "1.1.4"
     kotlin("jvm") version "1.9.22"
     kotlin("plugin.spring") version "1.9.22"
-    kotlin("plugin.serialization") version "1.9.21"
+    kotlin("plugin.serialization") version "1.9.22"
 
 }
 
@@ -20,7 +20,7 @@ repositories {
     mavenCentral()
 }
 
-val exposedVersion = "0.45.0"
+val exposedVersion = "0.46.0"
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
