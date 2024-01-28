@@ -23,13 +23,9 @@ repositories {
 val exposedVersion = "0.45.0"
 
 dependencies {
-    implementation("org.springframework.boot:spring-boot-starter-webflux")
+    implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
-    implementation("io.projectreactor.kotlin:reactor-kotlin-extensions")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
-
-    implementation("com.expediagroup:graphql-kotlin-spring-server:7.0.2")
 
     //SQL
     implementation("org.jetbrains.exposed:exposed-core:$exposedVersion")

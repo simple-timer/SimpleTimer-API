@@ -1,6 +1,5 @@
 package dev.simpletimer.simpletimer_api.database
 
-import com.expediagroup.graphql.generator.scalars.ID
 import dev.simpletimer.simpletimer_api.data.TimerData
 import dev.simpletimer.simpletimer_api.data.TimerServiceData
 import dev.simpletimer.simpletimer_api.database.dummy.GuildMessageChannel
@@ -34,7 +33,7 @@ object Transaction {
                 //結果用変数に追加
                 result.add(
                     TimerData(
-                        ID(it[TimerDataTable.timerDataId].toString()),
+                        it[TimerDataTable.timerDataId],
                         it[TimerDataTable.channel].channelId,
                         it[TimerDataTable.numberIndex],
                         it[TimerDataTable.seconds],

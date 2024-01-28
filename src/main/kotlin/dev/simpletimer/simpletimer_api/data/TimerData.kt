@@ -1,6 +1,5 @@
 package dev.simpletimer.simpletimer_api.data
 
-import com.expediagroup.graphql.generator.scalars.ID
 
 /**
  * タイマーの基本データ
@@ -11,7 +10,7 @@ import com.expediagroup.graphql.generator.scalars.ID
  * @property timerServiceData 稼働のデータ
  */
 data class TimerData(
-    val id: ID,
+    val id: Long,
     val channelId: Long,
     val numberIndex: Int,
     var seconds: Int,
