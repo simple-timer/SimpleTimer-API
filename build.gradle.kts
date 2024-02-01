@@ -20,7 +20,7 @@ repositories {
     mavenCentral()
 }
 
-val exposedVersion = "0.46.0"
+val exposedVersion = "0.47.0"
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
