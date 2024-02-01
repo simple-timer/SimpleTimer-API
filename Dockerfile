@@ -3,6 +3,7 @@ FROM gradle AS compile
 
 WORKDIR /app
 COPY . .
+RUN chmod +x ./gradlew
 RUN ./gradlew bootJar -i
 
 #Botを起動
