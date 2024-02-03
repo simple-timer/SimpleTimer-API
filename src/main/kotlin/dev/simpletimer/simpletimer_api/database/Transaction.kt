@@ -41,9 +41,9 @@ object Transaction {
                         it[TimerDataTable.timerDataId],
                         it[TimerDataTable.channel].channelId,
                         it[TimerDataTable.numberIndex],
-                        it[TimerDataTable.seconds],
                         it[TimerDataTable.displayMessageBase],
                         TimerServiceData(
+                            it[TimerDataTable.seconds],
                             it[TimerDataTable.isStarted],
                             it[TimerDataTable.isMove],
                             it[TimerDataTable.isFinish],

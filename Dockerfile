@@ -3,7 +3,7 @@ FROM gradle AS compile
 
 WORKDIR /app
 COPY . .
-RUN chmod +x ./gradlew && ./gradlew bootJar -i
+RUN gradle wrapper && chmod +x ./gradlew && ./gradlew bootJar -i
 
 #Botを起動
 FROM amazoncorretto:17 AS bot
