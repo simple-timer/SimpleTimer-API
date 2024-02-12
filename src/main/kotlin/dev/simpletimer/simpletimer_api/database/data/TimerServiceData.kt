@@ -1,4 +1,4 @@
-package dev.simpletimer.simpletimer_api.data
+package dev.simpletimer.simpletimer_api.database.data
 
 /**
  * タイマーの状態
