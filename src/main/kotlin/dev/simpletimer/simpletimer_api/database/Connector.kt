@@ -1,6 +1,9 @@
 package dev.simpletimer.simpletimer_api.database
 
+import dev.simpletimer.simpletimer_api.database.table.TokenTable
 import org.jetbrains.exposed.sql.Database
+import org.jetbrains.exposed.sql.SchemaUtils.createMissingTablesAndColumns
+import org.jetbrains.exposed.sql.transactions.transaction
 
 /**
  * データベースへの接続を行う
@@ -26,10 +29,14 @@ object Connector {
      */
     fun connect() {
         Database.connect(
-            "jdbc:postgresql://${databaseAddress}/${databaseScheme}",
+            "jdbc:postgresql://$databaseAddress/$databaseScheme",
             "org.postgresql.Driver",
             databaseUser,
             databasePassword
         )
+
+        transaction {
+            createMissingTablesAndColumns(TokenTable)
+        }
     }
 }

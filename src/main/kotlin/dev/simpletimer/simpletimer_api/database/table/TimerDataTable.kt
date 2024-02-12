@@ -1,4 +1,4 @@
-package dev.simpletimer.simpletimer_api.database
+package dev.simpletimer.simpletimer_api.database.table
 
 import org.jetbrains.exposed.sql.Table
 

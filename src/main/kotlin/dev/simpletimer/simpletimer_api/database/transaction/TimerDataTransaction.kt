@@ -1,15 +1,19 @@
-package dev.simpletimer.simpletimer_api.database
+package dev.simpletimer.simpletimer_api.database.transaction
 
-import dev.simpletimer.simpletimer_api.data.TimerData
-import dev.simpletimer.simpletimer_api.data.TimerServiceData
+import dev.simpletimer.simpletimer_api.database.Connector
+import dev.simpletimer.simpletimer_api.database.data.TimerData
+import dev.simpletimer.simpletimer_api.database.data.TimerServiceData
+import dev.simpletimer.simpletimer_api.database.table.TimerDataTable
 import org.jetbrains.exposed.sql.and
 import org.jetbrains.exposed.sql.selectAll
 import org.jetbrains.exposed.sql.transactions.transaction
 
 /**
- * DBへのトランザクションまとめ
+ * [TimerDataTable]に対するトランザクションです。
+ *
+ * @author janmaki
  */
-object Transaction {
+object TimerDataTransaction {
     /**
      * チャンネルのIDからタイマーのデータを取得する
      *
