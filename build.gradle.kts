@@ -32,7 +32,7 @@ dependencies {
     implementation("org.jetbrains.exposed:exposed-jdbc:$exposedVersion")
     implementation("org.jetbrains.exposed:exposed-java-time:$exposedVersion")
     implementation("org.jetbrains.exposed:exposed-json:$exposedVersion")
-    implementation("org.postgresql:postgresql:42.7.1")
+    implementation("org.postgresql:postgresql:42.7.3")
 
     //Json
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.2")
